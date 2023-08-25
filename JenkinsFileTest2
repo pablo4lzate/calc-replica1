@@ -6,7 +6,8 @@ pipeline{
     }
 
     environment {
-    FIREBASE_DEPLOY_TOKEN = credentials('firebase-token')
+    FIREBASE_DEPLOY_TOKEN = credentials('1//06_JkrTiN54VFCgYIARAAGAYSNwF-L9IrR3F3KkD1f1cKdtns9YWJ0iOueIFvotOr9nGrsJwQjfQCsn8jTAAmiciXp8I29tbIA6k
+')
     }
 
     stages{
@@ -24,13 +25,13 @@ pipeline{
 
         stage('Staging'){
             steps{
-            sh 'firebase deploy -P calc-replica-staging --token "$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P calc-replica-staging-6a74a --token "$FIREBASE_DEPLOY_TOKEN"'
             }
         }
 
         stage('Production'){
             steps{
-            sh 'firebase deploy -P calc-replica-production --token "$FIREBASE_DEPLOY_TOKEN"'
+            sh 'firebase deploy -P calc-replica-production-a2c4e --token "$FIREBASE_DEPLOY_TOKEN"'
             }
         }
     }
