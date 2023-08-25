@@ -6,8 +6,7 @@ pipeline{
     }
 
     environment {
-    FIREBASE_DEPLOY_TOKEN = credentials('1//06_JkrTiN54VFCgYIARAAGAYSNwF-L9IrR3F3KkD1f1cKdtns9YWJ0iOueIFvotOr9nGrsJwQjfQCsn8jTAAmiciXp8I29tbIA6k
-')
+    FIREBASE_DEPLOY_TOKEN = credentials('FIrebaseToken')
     }
 
     stages{
