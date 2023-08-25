@@ -19,7 +19,7 @@ pipeline{
 			}
 		}
 		
-		stage('Production'){
+		stage('Staging'){
 			steps{
 				echo 'This is Staging.'
 			}
